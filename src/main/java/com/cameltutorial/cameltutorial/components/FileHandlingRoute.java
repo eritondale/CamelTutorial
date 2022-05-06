@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 public class FileHandlingRoute extends RouteBuilder {
   private static final String DIR_FROM = "/home/elri/Desktop/Projects/CamelTutorial/files/?noop=true&";
   private static final String DIR_TO = "/home/elri/Desktop/Projects/CamelTutorial/files/?";
-  private static final String APPEND = "&fileExists=Append";
+  private static final String APPEND = "&fileExist=Append";
 
 
   public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class FileHandlingRoute extends RouteBuilder {
         .to("file://" + DIR_TO + "fileName=camel-demo-out.txt");
     from("direct:appendToFile")
         .process(Exchange::getMessage)
-        .to("file://" + DIR_TO + "fileName=camel-demo-appends.txt");
+        .to("file://" + DIR_TO + "fileName=camel-demo-appends.txt" + APPEND);
 
   }
 }
