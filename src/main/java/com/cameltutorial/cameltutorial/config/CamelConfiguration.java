@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
 @EqualsAndHashCode
 public class CamelConfiguration {
 
-  //public static final String RABBIT_URI = "rabbitmq:amq.direct?queue=%s&routingKey=%s&autoDelete=false";
+  public static final String RABBIT_URI = "rabbitmq:amq.direct?queue=%s&routingKey=%s&autoDelete=false";
   private String host;
   private Integer port;
   private String username;

@@ -1,0 +1,1 @@
+{"id":1,"city":"Desenzano","temp":22,"unit":"C","receivedTime":"Mon May 09 12:51:57 CEST 2022"}{"id":2,"city":"Lonato","temp":20,"unit":"C","receivedTime":"Mon May 09 12:53:06 CEST 2022"}

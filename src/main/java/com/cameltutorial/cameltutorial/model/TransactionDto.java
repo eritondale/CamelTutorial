@@ -10,10 +10,10 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class TransactionDto implements Serializable {
 
-  private String transactionId;
-  private String senderAccountId;
-  private String receiverAccountId;
-  private String amount;
+  private Long transactionId;
+  private Long senderAccountId;
+  private Long receiverAccountId;
+  private Long amount;
   private String currency;
   private String transactionDate;
 

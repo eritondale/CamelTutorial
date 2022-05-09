@@ -1,2 +1,10 @@
 Rabbit mq container run command
 docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password -p 15672:15672 rabbitmq:management
+
+WireTapRoute payload for sender route
+{"transactionId": 1,
+ "senderAccountId": 100,
+ "receiverAccountId": 200,
+  "amount": 500,
+  "currency": "GBP"
+ }
